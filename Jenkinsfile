@@ -12,5 +12,10 @@ steps{
 echo "build project"
 }
 }
+stage('Test project'){
+steps{
+echo "Test project"
+}
+}
 }
 }
