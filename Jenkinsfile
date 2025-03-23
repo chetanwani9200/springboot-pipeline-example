@@ -7,5 +7,10 @@ echo "Cloning Repository..."
 checkout scm
 }
 }
+stage('build project'){
+steps{
+echo "build project"
+
+}
 }
 }
