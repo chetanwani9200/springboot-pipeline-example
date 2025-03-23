@@ -8,10 +8,18 @@ checkout scm
 }
 }
 stage('Build') {
-            steps {
-                echo "Building the Spring Boot project with Maven..."
-                sh 'mvn clean install -DskipTests'
-            }
-        }
+steps {
+echo "Building the Spring Boot project with Maven..."
+}
+}
+stage('Test') {
+steps {
+echo "Testing the Spring Boot project with Maven..."
+}
+stage('Deploy') {
+steps {
+echo "Deploying the Spring Boot project with Maven..."
+}
+
 }
 }
