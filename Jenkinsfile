@@ -17,7 +17,7 @@ git branch: 'main', url: 'https://github.com/chetanwani9200/springboot-pipeline-
 stage('build project'){
 steps{
 echo "build project"
- bat "${MAVEN_HOME}\\bin\\mvn clean install"
+ bat "\"${MAVEN_HOME}\\bin\\mvn\clean install"
 }
 }
 }
