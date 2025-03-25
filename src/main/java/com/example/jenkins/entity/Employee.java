@@ -16,5 +16,35 @@ public class Employee {
     @Column(name="employee_age")
     private Integer Age;
 
+    public Long getId() {
+        return Id;
+    }
 
+    public void setId(Long id) {
+        Id = id;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getEducation() {
+        return Education;
+    }
+
+    public void setEducation(String education) {
+        Education = education;
+    }
+
+    public Integer getAge() {
+        return Age;
+    }
+
+    public void setAge(Integer age) {
+        Age = age;
+    }
 }
